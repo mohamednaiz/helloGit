@@ -1,0 +1,147 @@
+/* :root {
+  --bg: #f8fafc;
+  --surface: #ffffff;
+  --fg: #111827;
+  --muted: #64748b;
+  --accent: #2563eb;
+  --accent-dark: #1e40af;
+  --border: #e2e8f0;
+} */
+
+:root {
+  --bg: #fef3c7;
+  --surface: #fffbeb;
+  --fg: #1e3a2e;
+  --muted: #6b7280;
+  --accent: #f59e0b;
+  --accent-dark: #b45309;
+  --border: #fd368a;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  transition: background 0.15s ease;
+  font-weight: 600;
+  border-radius: 0.375rem;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  line-height: 1.6;
+  color: var(--fg);
+  background: var(--bg);
+  max-width: 70ch;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+nav {
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--accent);
+  font-weight: 500;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+section {
+  margin: 3rem 0;
+}
+
+h2 {
+  margin-bottom: 1rem;
+  color: var(--accent);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+  margin: 1rem 0;
+}
+
+article {
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+article h3 {
+  color: var(--accent);
+  margin-bottom: 0.5rem;
+}
+
+footer {
+  margin-top: 4rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  max-width: 30rem;
+}
+
+label {
+  font-weight: 500;
+  margin-top: 0.5rem;
+}
+
+input,
+textarea {
+  padding: 0.5rem 0.75rem;
+  border: 1px solid var(--surface);
+  border-radius: 0.375rem;
+  font: inherit;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+
+button {
+  margin-top: 1rem;
+  padding: 0.6rem 1.2rem;
+  background: var(--accent);
+  color: white;
+  border: none;
+  border-radius: 0.375rem;
+  cursor: pointer;
+  font: inherit;
+}
+
+button:hover {
+  background: var(--accent-dark);
+}
+
+nav a.primary {
+  color: orange;
+}
+nav a {
+  color: green;
+}
+a {
+  color: red;
+}
